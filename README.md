@@ -66,7 +66,9 @@ npm run dev
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
+
+<img width="1257" height="924" alt="jekode-advance-calculator vercel app_" src="https://github.com/user-attachments/assets/0e4aacf7-8d9f-4898-ab39-4c986c1f4d4f" />
 
 
 ---
