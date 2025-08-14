@@ -1,10 +1,10 @@
-# React Advanced Calculator
+# 🧮 React Advanced Calculator
 
 A modern, responsive calculator built using **React.js**, **Next.js**, **TypeScript**, and **Tailwind CSS**. This calculator supports basic arithmetic, percentage calculations, squares, square roots, and provides dynamic input validation for a smooth user experience.
 
 ---
 
-## Features
+## ✨ Features
 
 - **Basic Arithmetic**: Addition, Subtraction, Multiplication, Division
 - **Advanced Operations**: Percentage (`%`), Square (`x²`), Square Root (`√`)
@@ -16,7 +16,7 @@ A modern, responsive calculator built using **React.js**, **Next.js**, **TypeScr
 
 ---
 
-## Technologies Used
+## 💻 Technologies Used
 
 - **React.js** (Functional Components & Hooks)
 - **Next.js**
@@ -26,7 +26,7 @@ A modern, responsive calculator built using **React.js**, **Next.js**, **TypeScr
 
 ---
 
-## Installation
+## 📥 Installation
 
 1. **Clone the repository**
 
@@ -55,7 +55,7 @@ npm run dev
 
 ---
 
-## Usage
+## ⚙️ Usage
 
 - Click on numbers and operators to perform calculations.
 - Use C to clear all inputs.
