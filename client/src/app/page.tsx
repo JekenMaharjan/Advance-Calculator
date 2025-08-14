@@ -9,8 +9,8 @@ const Calculator = () => {
         ['7', '8', '9', '/'],
         ['4', '5', '6', '*'],
         ['1', '2', '3', '-'],
-        ['0', '.', '=', '+'],
-        ['%', 'x²', '√']
+        ['0', '00', '.', '+'],
+        ['%', 'x²', '√', '=']
     ]
 
     const numbers = ['1','2','3','4','5','6','7','8','9','0']
@@ -84,23 +84,32 @@ const Calculator = () => {
     }
 
     return (
-        <div className='bg-slate-500 max-w-fit rounded-xl p-5 m-5'>
-            <div className='border border-black w-93 h-26 rounded-xl m-3 flex justify-end items-end p-3 text-2xl'>
-                {result || 0}
-            </div> 
-            {buttons.map((row, id) => (
-                <div key={id} className='flex p-2 flex-wrap'>
-                    {row.map((val, idx) => (
-                        <button
-                            key={idx}
-                            onClick={() => handleCalculation(val)}
-                            className='bg-black text-white p-4 m-2 rounded-xl w-20 cursor-pointer'
-                        >
-                            {val}
-                        </button>
-                    ))}
-                </div>
-            ))}
+        <div 
+        className='flex flex-col items-center justify-center h-screen'
+        style={{ background: "linear-gradient(135deg, #ff9900bd 0%, #444444ff 100%)" }}
+        >
+            <h1 className='text-4xl font-serif font-extrabold'>CALCULATOR</h1>
+            <div className='bg-gray-800/50 max-w-fit rounded-xl p-5 m-5 border-1 border-gray-500 shadow-2xl'>
+                <div className='border border-black w-93 h-26 rounded-xl m-3 flex justify-end items-end p-3 text-2xl bg-gray-800/40 text-gray-200'>
+                    {result || 0}
+                </div> 
+                {buttons.map((row, id) => (
+                    <div key={id} className='flex p-2 flex-wrap'>
+                        {row.map((val, idx) => (
+                            <button
+                                key={idx}
+                                onClick={() => handleCalculation(val)}
+                                className={`${
+                                    operators.includes(val) ? 'bg-orange-400/80 hover:bg-orange-500/80' : 'bg-black/80 hover:bg-gray-800/80'
+                                    } 
+                                    text-white p-4 m-2 rounded-xl w-20 cursor-pointer text-xl hover:scale-110 transition-all duration-300`}
+                            >
+                                {val}
+                            </button>
+                        ))}
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
